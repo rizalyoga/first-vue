@@ -2,6 +2,7 @@
 import FoodList from "./components/FoodDataComponent.vue";
 import CounterApp from "./components/CounterAPP.vue";
 import HeaderAndFooter from "./components/slot/Header&Footer.vue";
+import MainStoreComponent from "./components/all-store-components/MainStoreComponent.vue";
 </script>
 
 <template>
@@ -12,7 +13,18 @@ import HeaderAndFooter from "./components/slot/Header&Footer.vue";
       </template>
     </HeaderAndFooter>
     <CounterApp />
+    <HeaderAndFooter>
+      <template v-slot:header>
+        <h3>List Menu</h3>
+      </template>
+    </HeaderAndFooter>
     <FoodList />
+    <HeaderAndFooter>
+      <template v-slot:header>
+        <h3>Vuex Store Component</h3>
+      </template>
+    </HeaderAndFooter>
+    <MainStoreComponent />
     <HeaderAndFooter>
       <template v-slot:footer>
         <h3>This is Footer</h3>

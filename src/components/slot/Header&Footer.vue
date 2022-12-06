@@ -9,13 +9,9 @@
 </template>
 
 <style scoped>
-header {
-  min-width: 100%;
-  background: skyblue;
-}
-
+header,
 footer {
   min-width: 100%;
-  background: rgb(255, 205, 97);
+  background: hsl(41, 100%, 70%);
 }
 </style>
